@@ -1,0 +1,81 @@
+/* Estilos do FAQ */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.accordion {
+    margin-top: 20px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid var(--gray-light);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: border-color var(--transition-speed);
+}
+
+body.dark-mode .accordion-item {
+    border-color: #3a4d3a;
+}
+
+.accordion-button {
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    transition: background-color var(--transition-speed);
+}
+
+body.dark-mode .accordion-button {
+    background-color: #243024;
+    color: white;
+}
+
+.accordion-button:hover {
+    background-color: var(--light-bg);
+}
+
+body.dark-mode .accordion-button:hover {
+    background-color: #2a3a2a;
+}
+
+.accordion-button i {
+    transition: transform 0.3s;
+}
+
+.accordion-button[aria-expanded="true"] i {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease;
+    background-color: white;
+}
+
+.accordion-content[hidden] {
+    display: block;
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.accordion-content:not([hidden]) {
+    max-height: 200px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+body.dark-mode .accordion-content {
+    background-color: #243024;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horta Orgânica</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsivo.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-container"></div>
+
+    <!-- Main Content -->
+    <main id="main-content"></main>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <script>
+        // Função para carregar componentes dinamicamente
+        async function loadComponent(containerId, componentPath) {
+            const container = document.getElementById(containerId);
+            if (container) {
+                try {
+                    const response = await fetch(componentPath);
+                    if (response.ok) {
+                        const content = await response.text();
+                        container.innerHTML = content;
+                    } else {
+                        console.error(`Erro ao carregar o componente: ${componentPath}`);
+                    }
+                } catch (error) {
+                    console.error(`Erro de rede ao carregar o componente: ${componentPath}`, error);
+                }
+            }
+        }
+
+        // Carregar os componentes
+        loadComponent('header-container', 'components/header.html');
+        loadComponent('main-content', 'components/main-content.html');
+        loadComponent('footer-container', 'components/footer.html');
+
+        // Carregar outros componentes no main-content
+        const mainContentComponents = [
+            'components/inseticida-alho.html',
+            'components/agrofloresta.html',
+            'components/agrotoxicos.html',
+            'components/compostagem.html',
+            'components/metodos-cultivo.html',
+            'components/polinizacao.html',
+            'components/jogo-memoria.html',
+            'components/eventos.html',
+            'components/depoimentos.html',
+            'components/faq.html'
+        ];
+
+        mainContentComponents.forEach(async (componentPath) => {
+            const response = await fetch(componentPath);
+            if (response.ok) {
+                const content = await response.text();
+                document.getElementById('main-content').innerHTML += content;
+            } else {
+                console.error(`Erro ao carregar o componente: ${componentPath}`);
+            }
+        });
+    </script>
+</body>
+</html>

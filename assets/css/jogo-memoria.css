@@ -1,0 +1,25 @@
+/* Estilos do Jogo da Memória */
+.memory-game {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.memory-card {
+    background-color: var(--light-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.memory-card:hover {
+    transform: scale(1.05);
+}
+
+.memory-card img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+}

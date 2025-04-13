@@ -1,0 +1,64 @@
+<!-- Jogo da Memória -->
+<link rel="stylesheet" href="../assets/css/jogo-memoria.css">
+
+<section id="jogo-memoria" class="content-section" aria-labelledby="jogo-memoria-title">
+    <div class="section-header">
+        <i class="fas fa-gamepad" aria-hidden="true"></i>
+        <h2 id="jogo-memoria-title">Jogo da Memória</h2>
+    </div>
+    
+    <div class="section-content">
+        <div class="text-content">
+            <p>
+                Teste seus conhecimentos sobre horta orgânica com nosso jogo da memória! Encontre os pares de cartas 
+                relacionadas à agricultura orgânica, polinização, compostagem e outros temas abordados no projeto.
+            </p>
+            <h3>Como jogar:</h3>
+            <ol>
+                <li>Cadastre seu apelido para entrar no ranking</li>
+                <li>Clique em uma carta para virá-la</li>
+                <li>Tente encontrar o par correspondente</li>
+                <li>Quanto menos tentativas você fizer, maior será sua pontuação</li>
+                <li>Complete o jogo o mais rápido possível para obter uma melhor classificação</li>
+            </ol>
+            <div class="game-preview">
+                <button id="open-game-btn" class="btn">
+                    <i class="fas fa-play"></i> Jogar Agora
+                </button>
+            </div>
+        </div>
+        <div class="media-content">
+            <div class="ranking-box">
+                <h4>Melhores Pontuações:</h4>
+                <div class="ranking-table-container">
+                    <table class="ranking-table">
+                        <thead>
+                            <tr>
+                                <th>Posição</th>
+                                <th>Jogador</th>
+                                <th>Pontuação</th>
+                                <th>Tempo</th>
+                                <th>Data</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ranking-body">
+                            <!-- Será preenchido via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="jogo-memoria">
+    <h2>Jogo da Memória</h2>
+    <div class="memory-grid">
+        <div class="memory-card" data-framework="alface">
+            <img class="front-face" src="../images/alface.jpg" alt="Alface">
+            <img class="back-face" src="../images/back.jpg" alt="Verso">
+        </div>
+        <!-- Outras cartas -->
+    </div>
+</section>
+<script src="../assets/js/jogo-memoria.js"></script>

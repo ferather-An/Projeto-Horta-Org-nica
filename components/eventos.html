@@ -1,0 +1,141 @@
+<section id="eventos" class="content-section" aria-labelledby="eventos-title">
+    <div class="section-header">
+        <i class="fas fa-calendar" aria-hidden="true"></i>
+        <h2 id="eventos-title">Eventos</h2>
+    </div>
+    
+    <div class="section-content">
+        <div class="events-upcoming">
+            <h3>Próximos Eventos</h3>
+            <div class="event-filter">
+                <label for="event-category">Filtrar por categoria:</label>
+                <select id="event-category">
+                    <option value="all">Todos os eventos</option>
+                    <option value="workshop">Oficinas</option>
+                    <option value="lecture">Palestras</option>
+                    <option value="field-trip">Visitas técnicas</option>
+                </select>
+            </div>
+            <div class="event-list">
+                <div class="event-card" data-category="workshop">
+                    <h4>Oficina de Compostagem</h4>
+                    <p class="event-date">Data: DD/MM/AAAA - Horário: HH:MM</p>
+                    <p class="event-location">Local: A definir</p>
+                    <p class="event-description">Aprenda a montar e manter uma composteira doméstica.</p>
+                    <a href="#" class="event-details-btn">Ver detalhes</a>
+                </div>
+                <div class="event-card" data-category="workshop">
+                    <h4>Workshop de Horta Vertical</h4>
+                    <p class="event-date">Data: DD/MM/AAAA - Horário: HH:MM</p>
+                    <p class="event-location">Local: A definir</p>
+                    <p class="event-description">Técnicas para aproveitar espaços verticais no cultivo de hortaliças.</p>
+                    <a href="#" class="event-details-btn">Ver detalhes</a>
+                </div>
+                <div class="event-card" data-category="lecture">
+                    <h4>Palestra: Alternativas aos Agrotóxicos</h4>
+                    <p class="event-date">Data: DD/MM/AAAA - Horário: HH:MM</p>
+                    <p class="event-location">Local: A definir</p>
+                    <p class="event-description">Conheça métodos naturais para controle de pragas e doenças.</p>
+                    <a href="#" class="event-details-btn">Ver detalhes</a>
+                </div>
+                <div class="event-card" data-category="field-trip">
+                    <h4>Visita Técnica: Fazenda Orgânica</h4>
+                    <p class="event-date">Data: DD/MM/AAAA - Horário: HH:MM</p>
+                    <p class="event-location">Local: Fazenda Modelo</p>
+                    <p class="event-description">Visita guiada a uma fazenda com produção orgânica certificada.</p>
+                    <a href="#" class="event-details-btn">Ver detalhes</a>
+                </div>
+            </div>
+            
+            <div class="event-registration">
+                <h3>Inscreva-se</h3>
+                <form id="event-form">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefone</label>
+                        <input type="tel" id="phone" placeholder="(XX) XXXXX-XXXX">
+                    </div>
+                    <div class="form-group">
+                        <label for="event">Evento</label>
+                        <select id="event" required aria-required="true">
+                            <option value="">Selecione um evento</option>
+                            <option value="compostagem">Oficina de Compostagem</option>
+                            <option value="vertical">Workshop de Horta Vertical</option>
+                            <option value="palestra">Palestra: Alternativas aos Agrotóxicos</option>
+                            <option value="visita">Visita Técnica: Fazenda Orgânica</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="newsletter" checked>
+                            Desejo receber a newsletter do projeto
+                        </label>
+                    </div>
+                    <button type="submit" class="btn">Inscrever-se</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="events-past">
+            <h3>Eventos Anteriores</h3>
+            <div class="past-events-grid">
+                <div class="past-event-card">
+                    <div class="event-image-placeholder" role="img" aria-label="Foto do evento Mutirão de Plantio"></div>
+                    <div class="event-info">
+                        <h4>Mutirão de Plantio</h4>
+                        <p class="event-date">Data: DD/MM/AAAA</p>
+                        <p class="event-description">Plantio coletivo de mudas no campus universitário.</p>
+                        <button class="gallery-btn" data-event="mutirao">Ver galeria</button>
+                    </div>
+                </div>
+                <div class="past-event-card">
+                    <div class="event-image-placeholder" role="img" aria-label="Foto do evento Feira de Orgânicos"></div>
+                    <div class="event-info">
+                        <h4>Feira de Orgânicos</h4>
+                        <p class="event-date">Data: DD/MM/AAAA</p>
+                        <p class="event-description">Exposição e venda de produtos orgânicos cultivados no projeto.</p>
+                        <button class="gallery-btn" data-event="feira">Ver galeria</button>
+                    </div>
+                </div>
+                <div class="past-event-card">
+                    <div class="event-image-placeholder" role="img" aria-label="Foto do evento Oficina de Inseticidas Naturais"></div>
+                    <div class="event-info">
+                        <h4>Oficina de Inseticidas Naturais</h4>
+                        <p class="event-date">Data: DD/MM/AAAA</p>
+                        <p class="event-description">Preparação de inseticidas naturais para controle de pragas.</p>
+                        <button class="gallery-btn" data-event="inseticidas">Ver galeria</button>
+                    </div>
+                </div>
+                <div class="past-event-card">
+                    <div class="event-image-placeholder" role="img" aria-label="Foto do evento Visita Técnica à Agrofloresta"></div>
+                    <div class="event-info">
+                        <h4>Visita Técnica à Agrofloresta</h4>
+                        <p class="event-date">Data: DD/MM/AAAA</p>
+                        <p class="event-description">Visita a um sistema agroflorestal consolidado na região.</p>
+                        <button class="gallery-btn" data-event="agrofloresta">Ver galeria</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="participants-gallery">
+                <h4>Galeria de Participantes</h4>
+                <p>Espaço para adicionar fotos dos participantes do projeto em diferentes semestres.</p>
+                <div class="participants-grid">
+                    <div class="participant-placeholder" role="img" aria-label="Foto dos participantes do semestre 1">Semestre 1</div>
+                    <div class="participant-placeholder" role="img" aria-label="Foto dos participantes do semestre 2">Semestre 2</div>
+                    <div class="participant-placeholder" role="img" aria-label="Foto dos participantes do semestre 3">Semestre 3</div>
+                    <div class="participant-placeholder" role="img" aria-label="Foto dos participantes do semestre 4">Semestre 4</div>
+                    <div class="participant-placeholder" role="img" aria-label="Foto dos participantes do semestre 5">Semestre 5</div>
+                    <div class="participant-placeholder" role="img" aria-label="Foto dos participantes do semestre 6">Semestre 6</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

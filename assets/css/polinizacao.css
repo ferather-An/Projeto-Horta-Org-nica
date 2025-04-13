@@ -1,0 +1,35 @@
+/* Estilos da seção Polinização */
+.polinizacao-container {
+    background-color: var(--light-bg);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 30px;
+}
+
+body.dark-mode .polinizacao-container {
+    background-color: #243024;
+}
+
+.polinizacao-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.polinizacao-header h2 {
+    color: var(--primary-color);
+    margin-left: 10px;
+}
+
+.polinizacao-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .polinizacao-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,0 +1,60 @@
+<section id="depoimentos" class="content-section" aria-labelledby="depoimentos-title">
+    <div class="section-header">
+        <i class="fas fa-quote-left" aria-hidden="true"></i>
+        <h2 id="depoimentos-title">Depoimentos</h2>
+    </div>
+    
+    <div class="testimonials-container">
+        <div class="testimonial-card">
+            <div class="testimonial-image" role="img" aria-label="Foto de Maria Silva"></div>
+            <blockquote>
+                "Participar do projeto mudou minha visão sobre alimentação. Agora cultivo meus próprios alimentos em casa e reduzi significativamente o consumo de produtos industrializados."
+            </blockquote>
+            <cite>- Maria Silva, Participante desde 2022</cite>
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-image" role="img" aria-label="Foto de João Santos"></div>
+            <blockquote>
+                "As oficinas de compostagem me ensinaram como transformar resíduos em recursos. Minha horta está muito mais produtiva desde que comecei a usar o composto que produzo."
+            </blockquote>
+            <cite>- João Santos, Participante desde 2021</cite>
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-image" role="img" aria-label="Foto de Ana Oliveira"></div>
+            <blockquote>
+                "O conhecimento sobre agrofloresta que adquiri no projeto me permitiu iniciar um pequeno sistema produtivo no sítio da minha família. Estamos colhendo os primeiros frutos!"
+            </blockquote>
+            <cite>- Ana Oliveira, Participante desde 2023</cite>
+        </div>
+    </div>
+    
+    <div class="share-testimony">
+        <h3>Compartilhe sua experiência</h3>
+        <form id="testimony-form">
+            <div class="form-group">
+                <label for="testimony-name">Nome</label>
+                <input type="text" id="testimony-name" required aria-required="true">
+            </div>
+            <div class="form-group">
+                <label for="participation-year">Participante desde</label>
+                <select id="participation-year" required aria-required="true">
+                    <option value="">Selecione o ano</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="older">Antes de 2020</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="testimony-text">Seu depoimento</label>
+                <textarea id="testimony-text" rows="4" required aria-required="true"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="testimony-photo">Sua foto (opcional)</label>
+                <input type="file" id="testimony-photo" accept="image/*">
+            </div>
+            <button type="submit" class="btn">Enviar depoimento</button>
+        </form>
+    </div>
+</section>

@@ -1,0 +1,29 @@
+/projeto-horta-organica
+├── /assets
+│   ├── /css
+│   │   ├── styles.css                # Estilos globais
+│   │   ├── polinizacao.css           # Estilos específicos da seção Polinização
+│   │   ├── jogo-memoria.css          # Estilos específicos do Jogo da Memória
+│   │   ├── faq.css                   # Estilos específicos do FAQ
+│   │   ├── responsivo.css            # Estilos para responsividade
+│   └── /js
+│       ├── script.js                 # Código global
+│       ├── polinizacao.js            # Funcionalidades da seção Polinização
+│       ├── jogo-memoria.js           # Funcionalidades do Jogo da Memória
+│       ├── faq.js                    # Funcionalidades do FAQ
+│       ├── eventos.js                # Funcionalidades da seção Eventos
+├── /components
+│   ├── header.html                   # Cabeçalho do site
+│   ├── footer.html                   # Rodapé do site
+│   ├── modal-jogo-memoria.html       # Modal do Jogo da Memória
+│   ├── faq.html                      # Seção de Perguntas Frequentes
+│   ├── polinizacao.html              # Seção Polinização
+│   ├── jogo-memoria.html             # Seção Jogo da Memória
+│   ├── eventos.html                  # Seção Eventos
+│   └── depoimentos.html              # Seção Depoimentos
+├── /images
+│   ├── banner-horta.jpg              # Imagem do banner
+│   ├── favicon.ico                   # Ícone do site
+│   └── (outras imagens do projeto)
+├── index.html                        # Página principal
+└── README.md                         # Documentação do projeto
